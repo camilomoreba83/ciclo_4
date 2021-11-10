@@ -13,7 +13,7 @@ public class FireBaseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fire_base);
     }
     public void volver(View view){
-        setResult(RESULT_CANCELED);
-        finish();
+        //setResult(RESULT_CANCELED);
+        //finish();
     }
 }
