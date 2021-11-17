@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:onClick="callAgregar"
-    tools:context=".MenuActivity2">
+    tools:context=".view.MenuActivity2">
 
     <Button
         android:id="@+id/btnVolver"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:onClick="callAgregar"
         android:text="Agrefar Categoria"
-        app:layout_constraintEnd_toEndOf="@+id/btnVolver"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
         app:layout_constraintStart_toStartOf="@+id/button2"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
@@ -78,7 +78,8 @@
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView5"
@@ -112,4 +113,14 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="opneFirebase"
+        android:text="Firebase"
+        app:layout_constraintEnd_toEndOf="@+id/btnVolver"
+        app:layout_constraintStart_toStartOf="@+id/btnVolver"
+        app:layout_constraintTop_toBottomOf="@+id/btnVolver" />
 </androidx.constraintlayout.widget.ConstraintLayout>

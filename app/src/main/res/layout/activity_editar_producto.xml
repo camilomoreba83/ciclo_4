@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.firebase.EditarProductoActivity">
+
+    <EditText
+        android:id="@+id/txt_nom_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Nombre Producto"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_cod_pro"
+        app:layout_constraintStart_toStartOf="@+id/txt_cod_pro"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cod_pro" />
+
+    <EditText
+        android:id="@+id/txt_pre_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Precio Producto"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/txt_nom_pro"
+        app:layout_constraintStart_toStartOf="@+id/txt_nom_pro"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nom_pro" />
+
+    <EditText
+        android:id="@+id/txt_cod_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Codigo Producto"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/txt_dis_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Disponible"
+        app:layout_constraintEnd_toEndOf="@+id/txt_pre_pro"
+        app:layout_constraintStart_toStartOf="@+id/txt_pre_pro"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pre_pro" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="guardar"
+        android:text="guardar"
+        app:layout_constraintEnd_toEndOf="@+id/txt_dis_pro"
+        app:layout_constraintStart_toStartOf="@+id/txt_dis_pro"
+        app:layout_constraintTop_toBottomOf="@+id/txt_dis_pro" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="eliminar"
+        android:text="eliminar"
+        app:layout_constraintEnd_toEndOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="volver"
+        android:text="volver"
+        app:layout_constraintEnd_toEndOf="@+id/button7"
+        app:layout_constraintStart_toStartOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+</androidx.constraintlayout.widget.ConstraintLayout>

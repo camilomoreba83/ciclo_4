@@ -1,31 +1,33 @@
-package co.edu.unab.mercapp;
+package co.edu.unab.mercapp.view;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.util.SparseBooleanArray;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
 
+import co.edu.unab.mercapp.view.categoria.AgregarCategoriaActivity;
+import co.edu.unab.mercapp.DataTemp;
+import co.edu.unab.mercapp.view.firebase.FireBaseActivity;
+import co.edu.unab.mercapp.R;
+import co.edu.unab.mercapp.view.categoria.RecyclerActivity;
+import co.edu.unab.mercapp.adapter.CategoriaAdapter;
 import co.edu.unab.mercapp.entity.Categoria;
+import co.edu.unab.mercapp.view.firebase.GestionFirebaseActivity;
 
 public class MenuActivity2 extends AppCompatActivity {
 
@@ -241,7 +243,13 @@ public class MenuActivity2 extends AppCompatActivity {
     }
 
     public void callAgregar(View view){
-        Intent intent = new Intent(getApplicationContext(),AgregarCategoriaActivity.class);
+        Intent intent = new Intent(getApplicationContext(), AgregarCategoriaActivity.class);
+        startActivity(intent);
+    }
+
+    public void opneFirebase(View view){
+        //Intent intent = new Intent(getApplicationContext(), FireBaseActivity.class);
+        Intent intent = new Intent(getApplicationContext(), GestionFirebaseActivity.class);//sem 4 sesio4 648am
         startActivity(intent);
     }
 

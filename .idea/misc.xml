@@ -4,6 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/camil/AndroidStudioProjects/MercApp/app/src/main/res/layout/activity_agregar_categoria.xml" value="0.22" />
+        <entry key="..\:/Users/camil/AndroidStudioProjects/MercApp/app/src/main/res/layout/activity_editar_producto.xml" value="0.33" />
+        <entry key="..\:/Users/camil/AndroidStudioProjects/MercApp/app/src/main/res/layout/activity_editar_producto_firebase.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/camil/AndroidStudioProjects/MercApp/app/src/main/res/layout/activity_fire_base.xml" value="0.25" />
+        <entry key="..\:/Users/camil/AndroidStudioProjects/MercApp/app/src/main/res/layout/activity_gestion_firebase.xml" value="0.25" />
         <entry key="..\:/Users/camil/AndroidStudioProjects/MercApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/camil/AndroidStudioProjects/MercApp/app/src/main/res/layout/activity_menu2.xml" value="0.33" />
         <entry key="..\:/Users/camil/AndroidStudioProjects/MercApp/app/src/main/res/layout/activity_recycler.xml" value="0.2" />

@@ -11,7 +11,7 @@ public class DataTemp {
     //se asocie como carateristica de interes y se presente en el listview del menu activity
     public static final ArrayList<Categoria> CATEGORIAS_INTERES = new ArrayList<>();
     //___
-    static void cargarCategorias(){
+    public static final void cargarCategorias(){
         CATEGORIAS.add(new Categoria("Aseo personal","Elementos de aseo para el cuidado personal"));
         CATEGORIAS.add(new Categoria("Alimentos","Productos de gran calidad"));
         CATEGORIAS.add(new Categoria("Bebidas","Productos refrescantes"));
